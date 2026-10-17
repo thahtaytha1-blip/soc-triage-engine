@@ -2,7 +2,7 @@
 
 A Streamlit web app that correlates three telemetry sources with a Gemini model and produces an incident response report: executive summary, MITRE ATT&CK-mapped timeline, IOCs, a Sigma rule and containment commands.
 
-![Incident report output](screenshot-report.png)
+![Incident report output](docs/screenshot-report.png)
 
 ## What it does
 
