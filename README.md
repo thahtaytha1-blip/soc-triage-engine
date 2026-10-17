@@ -2,6 +2,8 @@
 
 A Streamlit web app that correlates three telemetry sources with a Gemini model and produces an incident response report: executive summary, MITRE ATT&CK-mapped timeline, IOCs, a Sigma rule and containment commands.
 
+![Incident report output](screenshot-report.png)
+
 ## What it does
 
 | Input | Format |
@@ -52,7 +54,7 @@ The API key can also be pasted into the app's sidebar.
 
 Default: `gemini-3.8-flash`. `gemini-4-argon` is selectable in the sidebar if your key has access.
 
-## Roadmap (from the PRD, not yet implemented)
+## Planned improvements
 
 - CLI flags `--auth`, `--sysmon`, `--pcap`
 - Deterministic line-ID tagging (`[AUTH-00412]`) for evidence citation
